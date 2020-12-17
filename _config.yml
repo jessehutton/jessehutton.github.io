@@ -17,7 +17,7 @@ title: NRG_ | Twitch Streamer | Front End Developer
 email: nrg4everyone@gmail.com
 description: Jesse who goes by NRG_ on Twitch has been a part time streamer since July 2016. With much trial and error has discovered many secrets about streaming from both a technical and a community aspect.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://www.nrg.wtf" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.nrg.wtf" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nrg_jesse
 twitch_username:  nrg_
 
