@@ -7,9 +7,8 @@
         about = $("#about"),
         topTrigger = $(".hero__trigger-button.top"),
         bottomTrigger = $(".hero__trigger-button.bottom"),
-        closeBottom = $(".close-button.bottom"),
-        closeTop = $(".close-button.top"),
-        mute = $(".mute-action");
+        closeBottom = $(".close.bottom"),
+        closeTop = $(".close.top")
 
     // Mobile Detection
     function isMobile() {
