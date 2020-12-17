@@ -1,79 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title></title>
-		<meta name="description" content="NRG also is known as Jesse Hutton and is a full-time Front End Developer, part-time Twitch streamer and YouTube content creator." />
-		<link rel="stylesheet" type="text/css" href="/libs/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="/libs/fontawesome-pro-5.8.2-web/css/all.css">
-		<link rel="stylesheet" type="text/css" href="/css/styles.css">
-	</head>
-	<body>
-		<div class="background">
-		<img src="/images/desktopbackground.jpg">
-		</div>
-		<nav id="menu" class="menu">
-			<div class="morph-shape" data-morph-open="M158.5,0H0v53.1c0,0,19.6-4.6,66-0.2s60.5-3.8,92.5-0.1V0z" data-morph-trans="M158.5,0H0v53.1c0,0,35.4,15.4,82,13.8s76.5-14.1,76.5-14.1V0z">
-			<svg width="100%" height="100%" viewBox="0 0 158.5 61.2" preserveAspectRatio="none">
-				<path fill="none" d="M158.5,0H0v55.6c20.9-12.8,38.5,19.5,73.5-1.9s73.2-7.2,85,0V0z" />
-			</svg>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>NRG_ | Web Developer | Content Creator | Twitch Streamer</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Core Meta Data -->
+	<meta name="author" content="Jesse Hutton">
+	<meta name="description" content="Jesse Hutton AKA NRG is a full-time Front End Developer, part-time Twitch streamer and YouTube content creator.">
+	<meta name="keywords" content="twitch,streamer,web,developer,frontend,vuejs,angular,angularjs,responsive,html5,css3,jquery,php">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="images/favicons/manifest.json">
+	<meta name="theme-color" content="#000000">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="NRG_">
+  <meta property="og:url" content="https://nrg.wtf/">
+  <meta property="og:description" content="Jesse Hutton AKA NRG is a full-time Front End Developer, part-time Twitch streamer and YouTube content creator.">
+  <meta property="og:image" content="images/preview-image.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="NRG_ | Web Developer | Content Creator | Twitch Streamer">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NRG_ | Web Developer | Content Creator | Twitch Streamer">
+  <meta name="twitter:description" content="Jesse Hutton AKA NRG is a full-time Front End Developer, part-time Twitch streamer and YouTube content creator.">
+  <meta name="twitter:image" content="images/preview-image.png">
+  <meta name="twitter:site" content="@nrg_jesse">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-reboot.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slider.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<style>
+		.bg-image-blur {
+			/* Add the blur effect */
+			filter: blur(8px);
+			-webkit-filter: blur(8px);
+
+			/* Full height */
+			height: 100%;
+
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.bg-image-work {
+			/* The image used */
+			background-image: url("images/roomBackground.jpg");
+		}
+		.bg-image-play {
+			/* The image used */
+			background-image: url("images/desktopbackground.jpg");
+		}
+		.about__content,
+		.work__content {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 100%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+		}
+	</style>
+
+	<!-- Javascript Libraries -->
+	<script src="js/libraries/jquery-3.2.1.min.js"></script>
+	<script src="js/libraries/modernizr-custom.min.js"></script>
+	<script src="js/libraries/velocity.min.js"></script>
+	<script src="js/libraries/three.min.js"></script>	
+	<script src="js/libraries/twitch.js"></script>
+	<script src="js/libraries/swiper.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<main role="main">
+		<section id="hero" class="hero dark">
+			<!-- Trigger Buttons -->
+			<a href="#" class="hero__trigger-button top">Watch</a>
+			<a href="#" class="hero__trigger-button bottom">Setup</a>
+
+			<!-- Meta -->
+			<img class="logo" src="images/logo-light.svg" alt="NRG_ Logo" style="max-width: 50px">
+
+			<div class="meta name">
+				<p><small>NRG_</small></p>
 			</div>
-			<button class="menu__label"><i class="far fa-bars"></i><span>Menu</span></button>
-			<ul class="menu__inner">
-				<li><a href="/"><i class="fab fa-twitch"></i><span>Twitch</span></a></li>
-				<li><a href="/discord"><i class="fab fa-discord"></i><span>Discord</span></a></li>
-				<li><a href="/guides/"><i class="fas fa-books"></i><span>Guides</span></a></li>
-				<li><a href="/setup"><i class="far fa-server"></i><span>Setup</span></a></li>
-				<li><a href="https://streamlabs.com/nrg_/tip" target="_blank"><i class="far fa-usd-circle"></i><span>Donations</span></a></li>
-				<li><a href="/social"><i class="far fa-user-circle"></i><span>Social Media</span></a></li>
-			</ul>
-		</nav>
-		<div class="container-fluid" id="twitch">
-			<div class="content">
-				<div class="row no-gutters">
-					<div class="col-lg-8">
-						<div id="twitch-embed" class="embed-responsive embed-responsive-16by9"></div>
-					</div>
-					<div class="col-lg-4">
-						<iframe frameborder="0"	scrolling="yes"	id="nrg_" src="https://www.twitch.tv/embed/nrg_/chat?darkpopout" height="100%" width="100%" style="min-height: 340px;">
-						</iframe>
-					</div>
+
+			<div class="meta social">
+				<ul>
+					<li><a href="https://twitch.tv/nrg_" target="_blank"><span data-hover="twitch">twitch</span></a></li>
+					<li><a href="https://youtube.com/nrg_live" target="_blank"><span data-hover="youtube">youtube</span></a></li>
+					<li><a href="https://discord.gg/KdpMnPJ" target="_blank"><span data-hover="discord">discord</span></a></li>
+					<li><a href="https://twitter.com/nrg_jesse" target="_blank"><span data-hover="twitter">twitter</span></a></li>
+				</ul>
+			</div>
+
+		</section>
+
+		<section id="about" class="about idle">
+			<div class="bg-image-blur bg-image-play"></div>
+			<div class="about__content">
+				<div class="container">
+					<div id="twitch-embed" style="margin: 100px 0"></div>
 				</div>
-				<a href="https://twitch.tv/nrg_" class="skew-button" style="margin: 50px 0 0; left: 50%;"><span>Go To Twitch Page</span></a>
+				<!-- META -->
+				<img class="logo" src="images/logo.svg" alt="NRG_ Logo" style="max-width: 50px;">
+
+				<div class="meta name">
+					<p><small>NRG_</small></p>
+				</div>
+
+				<div class="meta social">
+					<ul>
+						<li><a href="https://twitch.tv/nrg_" target="_blank"><span data-hover="twitch">twitch</span></a></li>
+						<li><a href="https://youtube.com/nrg_live" target="_blank"><span data-hover="youtube">youtube</span></a></li>
+						<li><a href="https://discord.gg/KdpMnPJ" target="_blank"><span data-hover="discord">discord</span></a></li>
+						<li><a href="https://twitter.com/nrg_jesse" target="_blank"><span data-hover="twitter">twitter</span></a></li>
+						<li><a href="https://github.com/jessehutton/" target="_blank"><span data-hover="github">github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/jesse-hutton-96299bb8/" target="_blank"><span data-hover="linkedin">linkedin</span></a></li>
+						<li><a href="https://my.indeed.com/p/jesseh-xlpl3dr" target="_blank"><span data-hover="indeed">indeed</span></a></li>
+						<li><a href="https://jessehutton.github.io/nrgwtf/" target="_blank"><span data-hover="resume">resume</span></a></li>
+					</ul>
+				</div>
+
+				<a href="#" class="close-button top" style="color:#FFF">Close</a>
 			</div>
-		</div><!-- /container twitch -->
-		<script type="text/javascript" src="/libs/js/jquery-3.4.1.min.js"></script>
-		<script type="text/javascript" src="/libs/js/classie.js"></script>
-		<script type="text/javascript" src="/libs/js/snap.svg-min.js"></script>
-    	<script src="https://embed.twitch.tv/embed/v1.js"></script>
-		<script type="text/javascript" src="/js/script.js"></script>
-		<script type="text/javascript">
-			new Twitch.Embed("twitch-embed", {
-				width: "100%",
-				height: "100%",
-				channel: "nrg_",
-				layout: "video",
-				autoplay: false
-			});
-		</script>
-	</body>
+		</section>
+
+		<section id="work" class="work idle">
+			<div class="bg-image-blur bg-image-work"></div>
+				<div class="work__content">
+					<div class="container" style="height: 700px;">
+						<div class="blog-slider">
+							<div class="blog-slider__wrp swiper-wrapper">
+								<div class="blog-slider__item swiper-slide">
+									<div class="blog-slider__img">
+										<img src="images/gamingPC.jpg" alt="">
+									</div>
+									<div class="blog-slider__content">
+										<div class="blog-slider__title">Gaming PC</div>
+										<div class="blog-slider__text">
+											<ul>
+												<li>AMD Ryzen 2700x</li>
+												<li>EVGA GTX 1080Ti SC2</li>
+												<li>ASUS TUF b450m-PLUS</li>
+												<li>Noctua NH-D15 SE-AM4</li>
+												<li>32GB Corsair Vengeance Pro 3200MHz DDR4</li>
+												<li>512GB Intel M.2 NVME PCIe 4x</li>
+												<li>2TB Crucial SATA SSD</li>
+												<li>EVGA 850 P2 80+ Platinum</li>
+												<li>Thermaltake Level 20 VT</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="blog-slider__item swiper-slide">
+									<div class="blog-slider__img">
+										<img src="images/streamingPC.jpg"
+											alt="">
+									</div>
+									<div class="blog-slider__content">
+										<div class="blog-slider__title">Streaming PC</div>
+										<div class="blog-slider__text">
+											<ul>
+												<li>AMD Ryzen 2700</li>
+												<li>Zotac RTX 2060 6GB</li>
+												<li>ASUS Prime B450</li>
+												<li>Thermaltake Riing 360</li>
+												<li>16GB G.Skill TridentZ DDR4 3200MHz</li>
+												<li>500GB Samsung 960 Evo M.2 NVME</li>
+												<li>Thermaltake 850w 80+ Gold</li>
+												<li>Lian Li PC-o11 Dynamic</li>
+												<li>AverMedia 4k</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="blog-slider__item swiper-slide">
+									<div class="blog-slider__img">
+										<img src="images/camera.jpg"
+											alt="">
+									</div>
+									<div class="blog-slider__content">
+										<div class="blog-slider__title">Video Routing</div>
+										<div class="blog-slider__text">
+											<h2>Streaming PC</h2>
+											<ul class="far-list" style="font-size: 12px; line-height: 14px;">
+												<li>Avermedia 4k
+													<ul>
+														<li><strong>Input:</strong> Gaming PC</li>
+														<li><strong>Output:</strong> 27" Pixio 1440p @120hz</li>
+													</ul>
+												</li>
+												<li>Zotac RTX 2060 6GB
+													<ul>
+														<li><strong>Output:</strong> LG 34" 21:9 Ratio Ultrawide 2560×1080p</li>
+														<li><strong>Output:</strong> 21" Dell Touch Screen 1080p @60hz</li>
+													</ul>
+												</li>
+												<li>Black Magic Intensity Pro4k
+													<ul>
+														<li><strong>Input:</strong> Sony A6000 DSLR (face cam)</li>
+													</ul>
+												</li>
+												<li>Black Magic Decklink
+													<ul>
+														<li><strong>Input:</strong> GoPro Hero 4 Black Edition (room cam)</li>
+													</ul>
+												</li>
+												<li>Logitech C922x (desk cam)</li>
+											</ul>
+											<h2>Gaming PC</h2>
+											<ul class="far-list" style="font-size: 14px; line-height: 18px;">
+												<li>EVGA GTX 1080Ti SC2
+													<ul>
+														<li><strong>Output:</strong> Streaming PC (passthrough to Pixio 120hz)</li>
+														<li><strong>Output:</strong> MSI 34" 21:9 Ratio Ultrawide 3440x1440p@120hz</li>
+													</ul>
+												</li>
+												<li>Logitech Brio (face cam)</li>
+												<li>Logitech C920 (presentation cam)</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="blog-slider__item swiper-slide">
+									<div class="blog-slider__img">
+										<img src="images/keyboard.jpg"
+											alt="">
+									</div>
+									<div class="blog-slider__content">
+										<div class="blog-slider__title">Accessories</div>
+										<div class="blog-slider__text">
+											<h2>Gaming PC</h2>
+											<ul class="far-list" style="font-size: 14px; line-height: 18px;">
+												<li>Razer Naga Trinity</li>
+												<li>Corsair K68</li>
+												<li>XBOX One Wireless Controller (via USB)</li>
+												<li>PS4 Wireless Controller (via USB)</li>
+												<li>Logitech Brio (face cam)</li>
+												<li>Logitech C920 (presentation cam)</li>
+											</ul>
+											<h2>Streaming PC</h2>
+											<ul class="far-list" style="font-size: 14px; line-height: 18px;">
+												<li>SteelSeries World of Warcraft Mouse Legendary Edition</li>
+												<li>Redragon K552</li>
+												<li>Elgato StreamDeck (v1)</li>
+												<li>Helicon Gaming GoXLR</li>
+												<li>Sony A6000 (face cam)</li>
+												<li>Logitech C922x (desk cam)</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="blog-slider__item swiper-slide">
+									<div class="blog-slider__img">
+										<img src="images/goXLR.jpg"
+											alt="">
+									</div>
+									<div class="blog-slider__content">
+										<div class="blog-slider__title">Audio</div>
+										<div class="blog-slider__text">
+											<ul class="far-list">
+												<li><i class="far fa-microphone"></i> Audio Technica AT-875R</li>
+												<li><i class="far fa-digital-tachograph"></i> Helicon Gaming GoXLR</li>
+												<li><i class="far fa-volume"></i> Behringer Powerplay HA8000</li>
+												<li><i class="far fa-volume"></i> Behringer Eurorack Pro RX1602</li>
+												<li><i class="far fa-headphones-alt"></i> Philips SHP9500S</li>
+												<li><i class="far fa-headphones-alt"></i> Audio-Technica ATHM40x</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+						
+							</div>
+							<div class="blog-slider__pagination"></div>
+						</div>
+					</div>
+					<!-- META -->
+					<img class="logo" src="images/logo.svg" alt="NRG_ Logo" style="max-width: 50px;">
+
+					<div class="meta name">
+						<p><small>NRG_</small></p>
+					</div>
+
+					<div class="meta social">
+						<ul>
+							<li><a href="https://twitch.tv/nrg_" target="_blank"><span data-hover="twitch">twitch</span></a></li>
+							<li><a href="https://youtube.com/nrg_live" target="_blank"><span data-hover="youtube">youtube</span></a></li>
+							<li><a href="https://discord.gg/KdpMnPJ" target="_blank"><span data-hover="discord">discord</span></a></li>
+							<li><a href="https://twitter.com/nrg_jesse" target="_blank"><span data-hover="twitter">twitter</span></a></li>
+						</ul>
+					</div>
+
+					<a href="#" class="close-button bottom" style="color: #FFF;">Close</a>
+				</div>
+		</section>
+	</main>
+
+	<!-- Noise -->
+	<div class="grain"></div>
+	
+	<!-- Javascript -->
+	<script src="js/plugins/queryloader.min.js" type="text/javascript"></script>
+	<script src="js/plugins/retina.min.js" type="text/javascript"></script>
+	<script src="js/plugins/imagesloaded.min.js" type="text/javascript"></script>
+	<script src="js/plugins/jquery.fitvids.js" type="text/javascript"></script>
+	<script src="js/plugins/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="js/plugins/jquery.event.move.js" type="text/javascript"></script>
+	<script src="js/plugins/jquery.event.swipe.js" type="text/javascript"></script>
+	<script src="js/plugins/unslider.js" type="text/javascript"></script>
+	<script src="js/3d/projector.js" type="text/javascript"></script>
+	<script src="js/3d/canvasrenderer.js" type="text/javascript"></script>
+	<script src="js/3d/object-point-lights.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	new Twitch.Embed("twitch-embed", {
+		width: "100%",
+		height: 600,
+		channel: "nrg_",
+		autoplay: false
+	});
+	</script>
+</body>
 </html>
