@@ -53,8 +53,8 @@
                 }
             });
             object.position.y = -10;
-            object.position.z = -20;
-            object.scale.set(8,8,8);
+            object.position.x = 5;
+            object.scale.set(5,5,5);
 
             // then directly add the object
             scene.add(object);
