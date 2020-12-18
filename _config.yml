@@ -13,13 +13,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: NRG_ | Twitch Streamer | Front End Developer
+title: NRG_ | Web Developer | Content Creator | Twitch Streamer
 email: nrg4everyone@gmail.com
-description: Jesse who goes by NRG_ on Twitch has been a part time streamer since July 2016. With much trial and error has discovered many secrets about streaming from both a technical and a community aspect.
+description: Jesse Hutton AKA NRG is a full-time Front End Developer, part-time Twitch streamer and YouTube content creator.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://www.nrg.wtf" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://nrg.wtf" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nrg_jesse
 twitch_username:  nrg_
+youtube_username: nrg_live
+discord_invite: KdpMnPJ
+github_username: jessehutton
+linkedin_profile: jesse-hutton-96299bb8
+indeed_profile: jesseh-xlpl3dr
+resume_url: "https://jessehutton.github.io/nrgwtf/"
 
 # Build settings
 markdown: kramdown
