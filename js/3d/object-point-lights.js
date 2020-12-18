@@ -22,7 +22,7 @@
         hero.appendChild( container );
 
         // camera
-        camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 1500 );
+        camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 1500 );
         camera.position.z = 400;
 
         // scene
@@ -43,12 +43,21 @@
         scene.add( light4 );
 
         // objects
-        loader = new THREE.JSONLoader();
-        loader.load( '3d/deer.js', function ( geometry ) {
-            mesh = new THREE.Mesh( geometry, new THREE.MeshPhongMaterial( { color: 0xffffff, overdraw: 0.5 } ) );
-            mesh.position.y = 10;
-            mesh.scale.set(2.9,2.9,2.9);
-            scene.add( mesh );
+        loader = new THREE.ObjectLoader();
+        loader.load( '3d/logo.json', function ( object ) {
+            // if you want to add your custom material
+            var materialObj = new THREE.MeshPhongMaterial( { color: 0xffffff, overdraw: 0.5 } );
+            object.traverse(function(child) {
+                if (child instanceof THREE.Mesh) {
+                    child.material = materialObj;
+                }
+            });
+            object.position.y = -10;
+            object.position.z = -20;
+            object.scale.set(8,8,8);
+
+            // then directly add the object
+            scene.add(object);
         } );
 
         //
