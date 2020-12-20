@@ -54,7 +54,7 @@
             });
             object.position.y = -10;
             object.position.x = 5;
-            object.scale.set(5,5,5);
+            object.scale.set(500,500,500);
 
             // then directly add the object
             scene.add(object);
