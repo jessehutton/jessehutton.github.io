@@ -1,0 +1,18 @@
+# ---------------------------------------------------------------------------
+# Central image references. Paths are relative to the site root.
+# Use in templates as:  {{ site.data.images.logo | relative_url }}
+# Swap an image site-wide by changing its path here.
+# ---------------------------------------------------------------------------
+
+logo:        /images/logo.svg          # dark logo (Watch / Setup close buttons)
+logo_light:  /images/logo-light.svg    # light logo (hero)
+preview:     /images/preview-image.png # Open Graph / Twitter card image
+
+backgrounds:
+  watch: /images/desktopbackground.jpg # blurred background, "Watch" section
+  setup: /images/roomBackground.jpg    # blurred background, "Setup" section
+
+favicons:
+  icon_32:  /images/favicons/favicon-32x32.png
+  icon_16:  /images/favicons/favicon-16x16.png
+  manifest: /images/favicons/manifest.json

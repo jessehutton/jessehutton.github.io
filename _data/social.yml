@@ -1,0 +1,28 @@
+# ---------------------------------------------------------------------------
+# Social links — edit here once, every page/section updates.
+# Rendered by _includes/social.html
+#
+#   main:  the twitch / youtube / discord / twitter block shown everywhere
+#   extra: additional links appended only where the include is called with
+#          extended=true (currently the "Watch" section)
+# ---------------------------------------------------------------------------
+
+main:
+  - name: twitch
+    url: https://twitch.tv/nrg_
+  - name: youtube
+    url: https://youtube.com/nrg_live
+  - name: discord
+    url: https://discord.gg/KdpMnPJ
+  - name: twitter
+    url: https://twitter.com/nrg_jesse
+
+extra:
+  - name: github
+    url: https://github.com/jessehutton/
+  - name: linkedin
+    url: https://www.linkedin.com/in/jesse-hutton-96299bb8/
+  - name: indeed
+    url: https://my.indeed.com/p/jesseh-xlpl3dr
+  - name: resume
+    url: https://jessehutton.github.io/nrgwtf/

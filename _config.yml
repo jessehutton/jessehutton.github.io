@@ -1,46 +1,38 @@
-# Welcome to Jekyll!
+# ---------------------------------------------------------------------------
+# Site-wide settings for nrg.wtf
+# This file is NOT reloaded by `bundle exec jekyll serve`; restart after edits.
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Where to edit things:
+#   Social links ............ _data/social.yml
+#   Image paths ............. _data/images.yml
+#   Setup carousel slides ... _data/setup.yml + _includes/setup/*.html
+#   Page sections ........... _includes/sections/*.html
+#   <head> / scripts ........ _includes/head.html, _includes/scripts.html
+#   Page shell .............. _layouts/base.html
+# ---------------------------------------------------------------------------
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: NRG_ | Web Developer | Content Creator | Twitch Streamer
+short_name: NRG_
+author: Jesse Hutton
 email: nrg4everyone@gmail.com
 description: Jesse Hutton AKA NRG is a full-time Front End Developer, part-time Twitch streamer and YouTube content creator.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://nrg.wtf" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: nrg_jesse
-twitch_username:  nrg_
-youtube_username: nrg_live
-discord_invite: KdpMnPJ
-github_username: jessehutton
-linkedin_profile: jesse-hutton-96299bb8
-indeed_profile: jesseh-xlpl3dr
-resume_url: "https://jessehutton.github.io/nrgwtf/"
+keywords: twitch,streamer,web,developer,frontend,vuejs,angular,angularjs,responsive,html5,css3,jquery,php
+
+# Must be empty for a site served at the domain root. ("/" produces broken
+# "//images/..." URLs when used with the relative_url filter.)
+baseurl: ""
+url: "https://nrg.wtf"
+
+twitter_username: nrg_jesse   # used for the twitter:site meta tag
+twitch_channel: nrg_          # channel shown in the Twitch embed
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/

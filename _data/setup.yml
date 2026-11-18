@@ -1,0 +1,27 @@
+# ---------------------------------------------------------------------------
+# Slides in the "Setup" carousel, in display order.
+#   title:   slide heading
+#   image:   slide photo (site-root path)
+#   content: file in _includes/setup/ holding the slide's body HTML
+# Add a slide: add an entry here + a matching file in _includes/setup/.
+# ---------------------------------------------------------------------------
+
+- title: Gaming PC
+  image: /images/gamingPC.jpg
+  content: gaming-pc.html
+
+- title: Streaming PC
+  image: /images/streamingPC.jpg
+  content: streaming-pc.html
+
+- title: Video Routing
+  image: /images/camera.jpg
+  content: video-routing.html
+
+- title: Accessories
+  image: /images/keyboard.jpg
+  content: accessories.html
+
+- title: Audio
+  image: /images/goXLR.jpg
+  content: audio.html

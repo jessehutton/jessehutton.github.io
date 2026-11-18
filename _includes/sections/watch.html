@@ -1,0 +1,17 @@
+		{% comment %} "Watch" panel — slides in from the top. id/classes are used by js/main.js; don't rename. {% endcomment %}
+		<section id="about" class="about idle">
+			<div class="bg-image-blur bg-image-play"></div>
+			<div class="about__content">
+				<div class="container-fluid">
+					<div id="twitch-embed" style="margin: 100px 5%"></div>
+				</div>
+				<!-- META -->
+				<a href="#" class="close top"><img class="logo" src="{{ site.data.images.logo | relative_url }}" alt="{{ site.short_name }} Logo" style="max-width: 50px;"></a>
+
+				{% include site-name.html %}
+
+				{% include social.html extended=true %}
+
+				<a href="#" class="close close-button top" style="color:#FFF">Close</a>
+			</div>
+		</section>

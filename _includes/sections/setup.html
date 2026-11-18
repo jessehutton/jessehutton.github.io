@@ -1,0 +1,34 @@
+		{% comment %} "Setup" panel — slides in from the bottom. Slides come from _data/setup.yml. id/classes are used by js/main.js; don't rename. {% endcomment %}
+		<section id="work" class="work idle">
+			<div class="bg-image-blur bg-image-work"></div>
+				<div class="work__content">
+					<div class="container" style="height: 700px;">
+						<div class="blog-slider">
+							<div class="blog-slider__wrp swiper-wrapper">
+								{%- for slide in site.data.setup %}
+								<div class="blog-slider__item swiper-slide">
+									<div class="blog-slider__img">
+										<img src="{{ slide.image | relative_url }}" alt="{{ slide.title }}">
+									</div>
+									<div class="blog-slider__content">
+										<div class="blog-slider__title">{{ slide.title }}</div>
+										<div class="blog-slider__text">
+											{% include setup/{{ slide.content }} %}
+										</div>
+									</div>
+								</div>
+								{%- endfor %}
+							</div>
+							<div class="blog-slider__pagination"></div>
+						</div>
+					</div>
+					<!-- META -->
+					<a href="#" class="close bottom"><img class="logo" src="{{ site.data.images.logo | relative_url }}" alt="{{ site.short_name }} Logo" style="max-width: 50px;"></a>
+
+					{% include site-name.html %}
+
+					{% include social.html %}
+
+					<a href="#" class="close close-button bottom" style="color: #FFF;">Close</a>
+				</div>
+		</section>

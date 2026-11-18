@@ -1,0 +1,84 @@
+	<meta charset="utf-8">
+
+	<title>{{ page.title | default: site.title }}</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Core Meta Data -->
+	<meta name="author" content="{{ site.author }}">
+	<meta name="description" content="{{ page.description | default: site.description }}">
+	<meta name="keywords" content="{{ site.keywords }}">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="{{ site.data.images.favicons.icon_32 | relative_url }}" sizes="32x32">
+	<link rel="icon" type="image/png" href="{{ site.data.images.favicons.icon_16 | relative_url }}" sizes="16x16">
+	<link rel="manifest" href="{{ site.data.images.favicons.manifest | relative_url }}">
+	<meta name="theme-color" content="#000000">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="{{ site.short_name }}">
+	<meta property="og:url" content="{{ page.url | absolute_url }}">
+	<meta property="og:description" content="{{ page.description | default: site.description }}">
+	<meta property="og:image" content="{{ site.data.images.preview | absolute_url }}">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:site_name" content="{{ site.title }}">
+	<meta property="og:type" content="website">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="{{ page.title | default: site.title }}">
+	<meta name="twitter:description" content="{{ page.description | default: site.description }}">
+	<meta name="twitter:image" content="{{ site.data.images.preview | absolute_url }}">
+	<meta name="twitter:site" content="@{{ site.twitter_username }}">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="{{ '/css/bootstrap/bootstrap-reboot.min.css' | relative_url }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ '/css/bootstrap/bootstrap-grid.min.css' | relative_url }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ '/css/swiper.min.css' | relative_url }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ '/css/slider.css' | relative_url }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ '/css/main.css' | relative_url }}"/>
+	<style>
+		.bg-image-blur {
+			/* Add the blur effect */
+			filter: blur(8px);
+			-webkit-filter: blur(8px);
+
+			/* Full height */
+			height: 100%;
+
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.bg-image-work {
+			/* The image used — set in _data/images.yml */
+			background-image: url("{{ site.data.images.backgrounds.setup | relative_url }}");
+		}
+		.bg-image-play {
+			/* The image used — set in _data/images.yml */
+			background-image: url("{{ site.data.images.backgrounds.watch | relative_url }}");
+		}
+		.about__content,
+		.work__content {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 100%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+		}
+	</style>
+
+	<!-- Javascript Libraries -->
+	<script src="{{ '/js/libraries/jquery-3.2.1.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/libraries/modernizr-custom.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/libraries/velocity.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/libraries/three.min.js' | relative_url }}"></script>
+	<script src="{{ '/js/libraries/twitch.js' | relative_url }}"></script>
+	<script src="{{ '/js/libraries/swiper.min.js' | relative_url }}" type="text/javascript"></script>

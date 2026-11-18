@@ -1,0 +1,23 @@
+	<!-- Javascript -->
+	<script src="{{ '/js/plugins/queryloader.min.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/js/plugins/retina.min.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/js/plugins/imagesloaded.min.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/js/plugins/jquery.fitvids.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/js/plugins/jquery-ui.min.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/js/plugins/jquery.event.move.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/js/plugins/jquery.event.swipe.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/js/plugins/unslider.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/js/3d/projector.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/js/3d/canvasrenderer.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/js/3d/object-point-lights.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/js/main.js' | relative_url }}" type="text/javascript"></script>
+{%- if page.twitch_embed %}
+	<script type="text/javascript">
+	new Twitch.Embed("twitch-embed", {
+		width: "100%",
+		height: 750,
+		channel: "{{ site.twitch_channel }}",
+		autoplay: false
+	});
+	</script>
+{%- endif %}
